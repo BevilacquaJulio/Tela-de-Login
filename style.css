@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: url(/Sunset.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 500px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(209, 178, 77, 0.4);
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.input input{
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input input::placeholder{
+    font-size: 14px;
+    text-align: center;
+}
+
+.input input:focus{
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.utilitarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+}
+
+.utilitarios a{
+    color: #FBD76B;
+    font-weight: 600;
+}
+
+.lembrar-usuario input{
+    accent-color: #bd6f00;
+}
+
+.botao-login button{
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 7px 30px;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(90deg, rgba(170,126,43,1) 0%, rgba(255,227,63,1) 53%, rgba(224,190,56,1) 100%);
+    transition: background-color 0.3s ease, transform 0.6s ease
+}
+
+.botao-login button:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid #FBD76B;
+    transform: scale(1.1);
+}
